@@ -65,11 +65,11 @@ a:hover {
 }
 
 .container {
-	max-width: 1200px;
-	width: 100%;
+	width: 1200px;
 	margin: 0 auto;
-	padding: 0 1rem;
 }
+
+
 
 /* Header */
 
@@ -521,23 +521,26 @@ a:hover {
 
 /* Three Column Content */
 
-.gallery-grid {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 2rem;
+.three-column {
+	overflow: hidden;
 	padding: 10px 0 50px 0;
 }
 
-@media (max-width: 900px) {
-	.gallery-grid {
-		grid-template-columns: repeat(2, 1fr);
-	}
+.three-column .tbox1 {
+	float: left;
+	width: 384px;
+	margin-right: 20px;
 }
 
-@media (max-width: 600px) {
-	.gallery-grid {
-		grid-template-columns: 1fr;
-	}
+.three-column .tbox2 {
+	float: left;
+	width: 384px;
+	margin-right: 20px;
+}
+
+.three-column .tbox3 {
+	float: right;
+	width: 384px;
 }
 
 .box-style {
@@ -545,9 +548,7 @@ a:hover {
 	text-align: center;
 	border-radius: 8px;
 	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-	overflow: hidden;
 }
-
 
 .box-style h2 {
 	padding: 10px 0px;
@@ -557,25 +558,23 @@ a:hover {
 }
 
 .box-style .image {
-	width: 100%;
-	aspect-ratio: 4/3;
-	overflow: hidden;
+	width: 324px;
 }
 
 .box-style .image img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
+	width: 324px;
+	height: 200px;
 	display: block;
+	object-fit: cover;
 }
 
 .box-style .arrow {
 }
 
 .box-style .content {
-	overflow: hidden;
-	width: 100%;
+	width: 324px;
 	padding: 30px;
+	margin: 0 auto;
 }
 
 
