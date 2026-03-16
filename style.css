@@ -616,3 +616,14 @@ a:hover {
 	object-fit: contain;
 	pointer-events: none;
 }
+
+#help-keep-going-box {
+	background: #1d1c1c;
+	text-align: center;
+	border-radius: 8px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+	padding: 20px;
+}
+
+#help-keep-going-box h2 {
+	margin-bottom: 25px;
