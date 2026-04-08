@@ -548,6 +548,7 @@ a:hover {
 	text-align: center;
 	border-radius: 8px;
 	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+	overflow: hidden;
 }
 
 .box-style h2 {
@@ -605,4 +606,41 @@ a:hover {
 
 #help-keep-going-box h2 {
 	margin-bottom: 25px;
+}
+
+/* Mobile responsive */
+
+@media (max-width: 1220px) {
+	.container {
+		width: 100%;
+		padding: 0 1rem;
+		box-sizing: border-box;
+	}
+}
+
+@media (max-width: 900px) {
+	.three-column .tbox1,
+	.three-column .tbox2,
+	.three-column .tbox3 {
+		float: none;
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 1rem;
+	}
+
+	.box-style .content,
+	.box-style .image,
+	.box-style .image a,
+	.box-style .image img {
+		width: 100%;
+	}
+
+	.box-style .content {
+		height: auto;
+		box-sizing: border-box;
+	}
+
+	.box-style .image img {
+		height: auto;
+	}
 }
